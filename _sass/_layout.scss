@@ -1,0 +1,254 @@
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 869px;
+    background: url(../img/earth.jpg)  no-repeat center center;
+    background-size: cover;
+    @include media-query($on-palm) {
+      min-height: 400px;
+    }
+    // Positioning context for the mobile navigation icon
+    //position: relative;
+}
+
+.site-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: white;
+
+    &,
+    &:visited {
+        color: #f4f4f4;
+    }
+    @include media-query($on-palm) {
+      text-align: center;
+      float: none;
+      display: block;
+    }
+
+}
+.header-btn {
+  @include media-query($on-palm) {
+    display: none !important;
+  }
+}
+.footnote {
+  font-size: 24px;
+  display: inline-block;
+  font-weight: 100;
+
+}
+.header-wrapper {
+  text-align: center;
+  margin-top: 200px;
+  @include media-query($on-palm) {
+    margin-top: 0px;
+  }
+}
+.hero-header{
+  font-size: 60px;
+  margin-bottom: 0;
+  @include media-query($on-laptop) {
+    font-size: 25px;
+  }
+}
+.sub-hero {
+  font-size: 40px;
+  @include media-query($on-laptop) {
+    font-size: 20px;
+  }
+}
+
+.blue-btn{
+  color: #f4f4f4;
+  background-color: #0975b8;
+
+
+}
+.clear-btn{
+  border: 2px solid white;
+}
+.btn {
+  padding: 14px 19px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.btn:visited {
+  color: #f4f4f4;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color .2s, color .2s;
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+        margin: 0 10px;
+        // Gaps between nav items, but not on the last one
+
+    }
+
+    @include media-query($on-palm) {
+        float: none;
+        text-align: center;
+        .menu-icon {
+
+            text-align: center;
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+    }
+}
+/**
+ * Feature Section
+ */
+.features {
+  max-height:500px;
+  background: url(../img/blue.jpg)  no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  font-size: 60px;
+  padding: 50px 5px;
+  @include media-query($on-laptop) {
+    font-size: 25px;
+  }
+}
+.feature-heading {
+  font-size: 40px;
+  @include media-query($on-laptop) {
+    font-size: 25px;
+  }
+}
+
+.feature-text {
+  line-height: 55px;
+}
+
+
+/**
+ * Testimonial Section
+ */
+.testimonial {
+  color: #333;
+  text-align: center;
+  max-height: 500px;
+  padding: 50px 0;
+  @include media-query($on-laptop) {
+    font-size: 25px;
+  }
+}
+.test-text {
+  font-size: 30px;
+  @include media-query($on-laptop) {
+    font-size: 25px;
+  }
+
+}
+
+
+/**
+ * Pricing Section
+ */
+.pricing {
+  min-height: 600px;
+  background: url(../img/green.jpg)  no-repeat center center;
+  background-size: cover;
+}
+
+
+.pricing-table {
+text-align: center;
+display: flex;
+justify-content: center;
+@include media-query($on-palm) {
+ flex-direction: column;
+}
+}
+
+.table {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin: 84px 20px;
+  font-size: 34px;
+  height: 330px;
+  position: relative;
+  width: 275px;
+  @include media-query($on-laptop) {
+    font-size: 20px;
+  }
+
+  @include media-query($on-palm) {
+    margin: 5px auto 5px;
+  }
+}
+
+.table-header {
+  font-weight: 600;
+  padding: 35px 45px;
+}
+
+.table-body {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 10px
+}
+
+.table-lg {
+  margin-top: 50px;
+  height: 450px;
+  @include media-query($on-palm) {
+    margin-top: 0;
+  }
+}
+
+.table-header-lg {
+  font-weight: 600;
+  padding: 45px 45px;
+}
+
+.table-body-lg {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0 20px;
+  line-height: 20px;
+}
+
+.table-btn-left {
+  position: relative;
+  top: 0;
+}
+
+.table-btn {
+  position: relative;
+  top: 0;
+}
+
+
+
+.table-btn-right {
+  position: relative;
+  top: 0;
+}
